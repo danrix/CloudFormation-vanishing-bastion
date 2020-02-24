@@ -23,14 +23,23 @@ The template has placeholders for 3 variables: {0}, {1}, and {2} which correspon
 
 When used manually, this yaml template must include the full path to a series of AWS Parameter Store parameters in the first section of the file. These are then referenced elsewhere in the template. The parameters are:
 
-- *vpcId*                   Id of the VPC
-- *igwId*                   Id of the Internet Gateway. Assumed existing in this project. 
-- *publicSubnetCIDR*        The CIDR block to be assigned to the public subnet.
-- *publicSubnetAZ*          Availability Zone for the public subnet.
-- *amiId*                   Id of the image used to build the EC2 instance (has to be built and configured prior to this)
-- *ec2InstanceType*         See catalog of EC2 instance types to select the most appropriate.
-- *ec2KeyPair*              encryption key pair to be used. MUST exist and you must have access to it.
-- *ec2PrivateIp*            private IP through which the instance can be accessed from within the VPC, if necessary.
-- *ec2InternalBastionIp*    The IP (in CIDR block format) of the "inner" host with which the "external" bastion host can communicate.
+- *vpcId*                   
+        Id of the VPC
+- *igwId*                   
+        Id of the Internet Gateway. Assumed existing in this project. 
+- *publicSubnetCIDR*        
+        The CIDR block to be assigned to the public subnet.
+- *publicSubnetAZ*          
+        Availability Zone for the public subnet.
+- *amiId*                   
+        Id of the image used to build the EC2 instance (has to be built and configured prior to this)
+- *ec2InstanceType*         
+        See catalog of EC2 instance types to select the most appropriate.
+- *ec2KeyPair*              
+        Encryption key pair to be used. MUST exist and you must have access to it.
+- *ec2PrivateIp*            
+        Private IP through which the instance can be accessed from within the VPC, if necessary.
+- *ec2InternalBastionIp*    
+        The IP (in CIDR block format) of the "inner" host with which the "external" bastion host can communicate.
 
 
