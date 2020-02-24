@@ -4,20 +4,20 @@ This repo holds CloudFormation template files and related resources to generate 
 
 **Note**: This repo holds elements referenced in the article:
 
-[The Case of the Vanishing Bastion](https://www.medium.com "The Case of the Vanishing Bastion")
+[The Case of the Vanishing Bastion](https://not.ready.yet "The Case of the Vanishing Bastion")
 
 This is part of a larger project. A link to the whole repo can be found in the follow up article:
 
-[Automating the Vanishing Bastion](https://www.medium.com "Automating the Vanishing Bastion")
+[Automating the Vanishing Bastion](https://not.ready.yet "Automating the Vanishing Bastion")
 
 
 ###
 
 ## bastion_template_base.yaml
 
-It the CloudFormation Template file used to build the resources mentioned.
+This is the CloudFormation Template file used to build the resources mentioned.
 
-The template has placeholders for 3 variables: {0}, {1}, and {2} which correspond to "Parameters base path", "user name", "password" which are substituted by string values using a Lambda function in the full project.
+The template has placeholders for 3 variables: {0}, {1}, and {2} which correspond to "Parameters base path", "user name", "password". These varaiables are substituted by string values using a Lambda function in the full project. For testing, and to manually build this stack with CloudFormation, replace the palceholders with the appropriate strings.
 
 ### Parameters base path
 
@@ -42,4 +42,7 @@ When used manually, this yaml template must include the full path to a series of
 - **ec2InternalBastionIp**
         The IP (in CIDR block format) of the "inner" host with which the "external" bastion host can communicate.
 
+### User name and password
+
+If used manually, substitute placeholder {1} for a username and {2} for a long, complex, password (Windows comformant).
 
