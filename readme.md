@@ -4,7 +4,7 @@ This repo holds CloudFormation template files and related resources to generate 
 
 **Note**: This repo holds elements referenced in the article:
 
-[The Case of the Vanishing Bastion](https://not.ready.yet "The Case of the Vanishing Bastion")
+[The Case of the Vanishing Bastion](https://medium.com/@rixdan/the-case-of-the-vanishing-bastion-2f6f85c3a62 "The Case of the Vanishing Bastion")
 
 This is part of a larger project. A link to the whole repo can be found in the follow up article:
 
